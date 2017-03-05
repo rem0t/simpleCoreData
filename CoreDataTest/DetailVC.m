@@ -14,9 +14,18 @@
 
 @implementation DetailVC
 
+@synthesize device;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    if (self.device) {
+        [self.nameField setText:[self.device valueForKey:@"name"]];
+        [self.modelField setText:[self.device valueForKey:@"version"]];
+        [self.CompanyField setText:[self.device valueForKey:@"company"]];
+        
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,6 +49,16 @@
     
     NSManagedObjectContext *context = [self managedObjectContext];
     
+    if (self.device){
+    
+        [self.device setValue:self.nameField.text forKey:@"name"];
+        [self.device setValue:self.modelField.text forKey:@"version"];
+        [self.device setValue:self.CompanyField.text forKey:@"company"];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"УРА!" message:@"Успешно изменено" delegate:self cancelButtonTitle:@"ОК" otherButtonTitles:nil, nil];
+        [alert show];
+        
+    }else {
     NSManagedObject *newDvice = [NSEntityDescription insertNewObjectForEntityForName:@"Device" inManagedObjectContext:context];
     [newDvice setValue:self.nameField.text forKey:@"name"];
     [newDvice setValue:self.modelField.text forKey:@"version"];
@@ -55,7 +74,7 @@
         [alert show];
     }
     
-    
+    }
     
 }
 

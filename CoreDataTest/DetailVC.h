@@ -17,4 +17,6 @@
 
 - (IBAction)saveButton:(id)sender;
 
+@property (strong) NSManagedObject *device;
+
 @end

@@ -16,10 +16,7 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -94,6 +91,15 @@
     return YES;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([[segue identifier] isEqualToString:@"UpdateDevice"]){
+        NSManagedObject *selectedDevice = [self.devices objectAtIndex:[[self.tableView indexPathForSelectedRow]row]];
+        DetailVC *destVC = segue.destinationViewController;
+        destVC.device = selectedDevice;
+    }
+    
+}
 
 
 

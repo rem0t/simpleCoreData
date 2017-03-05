@@ -41,6 +41,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="EUM-i9-U8l" kind="show" identifier="UpdateDevice" id="XLy-dK-BVr"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -132,4 +135,7 @@
             <point key="canvasLocation" x="360" y="44"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="XLy-dK-BVr"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -14,6 +14,7 @@
 		0F440D191E69B82400DC55E3 /* CoreDataTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F440D171E69B82400DC55E3 /* CoreDataTest.xcdatamodeld */; };
 		0F440D1B1E69B82400DC55E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F440D1A1E69B82400DC55E3 /* Assets.xcassets */; };
 		0F440D1E1E69B82400DC55E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F440D1C1E69B82400DC55E3 /* LaunchScreen.storyboard */; };
+		0F440D271E6A299B00DC55E3 /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F440D261E6A299A00DC55E3 /* DetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		0F440D1A1E69B82400DC55E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F440D1D1E69B82400DC55E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F440D1F1E69B82400DC55E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F440D251E6A299A00DC55E3 /* DetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailVC.h; sourceTree = "<group>"; };
+		0F440D261E6A299A00DC55E3 /* DetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 		0F440D0A1E69B82400DC55E3 /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				0F440D251E6A299A00DC55E3 /* DetailVC.h */,
+				0F440D261E6A299A00DC55E3 /* DetailVC.m */,
 				0F440D0E1E69B82400DC55E3 /* AppDelegate.h */,
 				0F440D0F1E69B82400DC55E3 /* AppDelegate.m */,
 				0F440D111E69B82400DC55E3 /* ViewController.h */,
@@ -154,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F440D191E69B82400DC55E3 /* CoreDataTest.xcdatamodeld in Sources */,
+				0F440D271E6A299B00DC55E3 /* DetailVC.m in Sources */,
 				0F440D131E69B82400DC55E3 /* ViewController.m in Sources */,
 				0F440D101E69B82400DC55E3 /* AppDelegate.m in Sources */,
 				0F440D0D1E69B82400DC55E3 /* main.m in Sources */,
